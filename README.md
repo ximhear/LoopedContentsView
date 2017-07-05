@@ -1,5 +1,6 @@
 # LoopedContentsView
-[![Swift](https://img.shields.io/badge/swift-3.2-orange.svg?style=flat)](#)
+[![Swift](https://img.shields.io/badge/swift-3.0-green.svg?style=flat)](#)
+[![Swift](https://img.shields.io/badge/swift-3.2-green.svg?style=flat)](#)
 [![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg?style=flat)](#)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://opensource.org/licenses/MIT)
 
@@ -54,7 +55,7 @@ loopedContentsView.registerClass(class: {Name of Cell Class}.self, forCellReuseI
 
 ### Example
 
-[LoopedContentsViewExample](https://github.com/naru-jpn/LoopedContentsView/tree/master/LoopedContentsViewExample)
+[LoopedContentsViewExample](https://github.com/ximhear/LoopedContentsView/tree/master/LoopedContentsViewExample)
 
 ## License
 
