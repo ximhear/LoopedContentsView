@@ -11,10 +11,10 @@
 		4369EE981D6C3C9300A8388B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4369EE971D6C3C9300A8388B /* ViewController.swift */; };
 		4369EE9D1D6C3C9300A8388B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4369EE9C1D6C3C9300A8388B /* Assets.xcassets */; };
 		4369EEA01D6C3C9300A8388B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4369EE9E1D6C3C9300A8388B /* LaunchScreen.storyboard */; };
-		4369EEAA1D6C3CCF00A8388B /* LoopedContentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4369EEA81D6C3CCF00A8388B /* LoopedContentsView.swift */; };
-		4369EEAB1D6C3CCF00A8388B /* LoopedContentsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4369EEA91D6C3CCF00A8388B /* LoopedContentsViewCell.swift */; };
 		4369EEAD1D6C3D1B00A8388B /* LoopedContentsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4369EEAC1D6C3D1B00A8388B /* LoopedContentsDataSource.swift */; };
 		4369EEB11D6C3EA900A8388B /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4369EEB01D6C3EA900A8388B /* CustomCell.swift */; };
+		8C541E3E1F0CD68E004EF6A6 /* LoopedContentsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C541E3C1F0CD68E004EF6A6 /* LoopedContentsViewCell.swift */; };
+		8C541E3F1F0CD68E004EF6A6 /* LoopedContentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C541E3D1F0CD68E004EF6A6 /* LoopedContentsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +24,10 @@
 		4369EE9C1D6C3C9300A8388B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4369EE9F1D6C3C9300A8388B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4369EEA11D6C3C9300A8388B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4369EEA81D6C3CCF00A8388B /* LoopedContentsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoopedContentsView.swift; path = ../../../Sources/LoopedContentsView.swift; sourceTree = "<group>"; };
-		4369EEA91D6C3CCF00A8388B /* LoopedContentsViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoopedContentsViewCell.swift; path = ../../../Sources/LoopedContentsViewCell.swift; sourceTree = "<group>"; };
 		4369EEAC1D6C3D1B00A8388B /* LoopedContentsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopedContentsDataSource.swift; sourceTree = "<group>"; };
 		4369EEB01D6C3EA900A8388B /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		8C541E3C1F0CD68E004EF6A6 /* LoopedContentsViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopedContentsViewCell.swift; sourceTree = "<group>"; };
+		8C541E3D1F0CD68E004EF6A6 /* LoopedContentsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopedContentsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				4369EE941D6C3C9300A8388B /* LoopedContentsViewExample */,
-				4369EEA71D6C3CBC00A8388B /* Vender */,
 				4369EE931D6C3C9300A8388B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +60,8 @@
 		4369EE941D6C3C9300A8388B /* LoopedContentsViewExample */ = {
 			isa = PBXGroup;
 			children = (
+				8C541E3C1F0CD68E004EF6A6 /* LoopedContentsViewCell.swift */,
+				8C541E3D1F0CD68E004EF6A6 /* LoopedContentsView.swift */,
 				4369EE951D6C3C9300A8388B /* AppDelegate.swift */,
 				4369EE971D6C3C9300A8388B /* ViewController.swift */,
 				4369EEAC1D6C3D1B00A8388B /* LoopedContentsDataSource.swift */,
@@ -70,16 +71,6 @@
 				4369EEA11D6C3C9300A8388B /* Info.plist */,
 			);
 			path = LoopedContentsViewExample;
-			sourceTree = "<group>";
-		};
-		4369EEA71D6C3CBC00A8388B /* Vender */ = {
-			isa = PBXGroup;
-			children = (
-				4369EEA81D6C3CCF00A8388B /* LoopedContentsView.swift */,
-				4369EEA91D6C3CCF00A8388B /* LoopedContentsViewCell.swift */,
-			);
-			name = Vender;
-			path = LoopedContentsViewExample/Vender;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,6 +105,7 @@
 				TargetAttributes = {
 					4369EE911D6C3C9300A8388B = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -153,11 +145,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4369EE981D6C3C9300A8388B /* ViewController.swift in Sources */,
-				4369EEAA1D6C3CCF00A8388B /* LoopedContentsView.swift in Sources */,
+				8C541E3E1F0CD68E004EF6A6 /* LoopedContentsViewCell.swift in Sources */,
 				4369EE961D6C3C9300A8388B /* AppDelegate.swift in Sources */,
 				4369EEAD1D6C3D1B00A8388B /* LoopedContentsDataSource.swift in Sources */,
 				4369EEB11D6C3EA900A8388B /* CustomCell.swift in Sources */,
-				4369EEAB1D6C3CCF00A8388B /* LoopedContentsViewCell.swift in Sources */,
+				8C541E3F1F0CD68E004EF6A6 /* LoopedContentsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +259,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jpn.naru.LoopedContentsViewExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -279,6 +272,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jpn.naru.LoopedContentsViewExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -301,6 +295,7 @@
 				4369EEA61D6C3C9300A8388B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

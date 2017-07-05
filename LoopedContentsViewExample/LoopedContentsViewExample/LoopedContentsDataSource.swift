@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class LoopedContentsDataSource: LoopedContentsViewDataSource {
+open class LoopedContentsDataSource: LoopedContentsViewDataSource {
 
     // MARK: Constants
     
@@ -16,17 +16,17 @@ public class LoopedContentsDataSource: LoopedContentsViewDataSource {
         static let Contents: [String] = (0...20).map { (element: Int) -> String in return "\(element)" }
     }
     
-    public func loopedContentsViewNumberOfContents(loopedContentsView: LoopedContentsView) -> Int {
+    open func loopedContentsViewNumberOfContents(loopedContentsView: LoopedContentsView) -> Int {
         return Constants.Contents.count
     }
     
-    public func loopedContentsView(loopedContentsView: LoopedContentsView, cellAtIndex index: Int) -> LoopedContentsViewCell {
-        let cell = loopedContentsView.dequeueReusableCellWithIdentifier("cell") as! CustomCell
+    open func loopedContentsView(loopedContentsView: LoopedContentsView, cellAtIndex index: Int) -> LoopedContentsViewCell {
+        let cell = loopedContentsView.dequeueReusableCellWithIdentifier(identifier: "cell") as! CustomCell
         self.configulerCell(cell, atIndex: index)
         return cell
     }
     
-    private func configulerCell(cell: CustomCell, atIndex index: Int) {
+    fileprivate func configulerCell(_ cell: CustomCell, atIndex index: Int) {
         
         let color: UIColor = {
             let red: CGFloat = CGFloat(Constants.Contents.count - index - 1)/CGFloat(Constants.Contents.count - 1)

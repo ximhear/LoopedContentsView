@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class CustomCell: LoopedContentsViewCell {
+open class CustomCell: LoopedContentsViewCell {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -20,16 +20,16 @@ public class CustomCell: LoopedContentsViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public lazy var label: UILabel = {
+    open lazy var label: UILabel = {
         let bounds: CGRect = self.contentView.bounds
         let origin: CGPoint = CGPoint(x: 1.0, y: 1.0)
         let size: CGSize = CGSize(width: bounds.size.width - 2.0, height: bounds.size.height - 2.0)
         let frame: CGRect = CGRect(origin: origin, size: size)
         let label: UILabel = UILabel(frame: frame)
-        label.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
-        label.textColor = UIColor.whiteColor()
+        label.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        label.textColor = UIColor.white
         label.font = UIFont(name: "HelveticaNeue-UltraLight", size: 46.0)
-        label.textAlignment = .Center
+        label.textAlignment = .center
         return label
     }()
 }
