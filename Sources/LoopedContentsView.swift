@@ -427,7 +427,7 @@ public class LoopedContentsView: UIView, UIScrollViewDelegate {
         
         // Get New/Disable Cell Indexes
         let indexes: [Int] = previousIndexes + [self.centerItem.index] + nextIndexes
-        var indexSet: Set<Int> = Set(indexes)
+        let indexSet: Set<Int> = Set(indexes)
         let newCellIndexSet: Set<Int> = indexSet.subtracting(self.visibleCellIndexSet)
         let disableCellIndexSet: Set<Int> = self.visibleCellIndexSet.subtracting(indexSet)
         self.visibleCellIndexSet = indexSet
