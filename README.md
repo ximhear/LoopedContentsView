@@ -4,7 +4,8 @@
 [![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg?style=flat)](#)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://opensource.org/licenses/MIT)
 
-__README for other languages__<br /> [Russian](http://gargo.of.by/loopedcontentsview/)
+## 환경
+xcode8, xcode9 beta2에서 정상적으로 동작.
 
 ## Overview
 
