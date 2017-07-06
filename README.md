@@ -7,6 +7,9 @@
 ## 환경
 xcode8, xcode9 beta2에서 정상적으로 동작.
 
+## Swift 4
+Swift 4에서 사용하려면 swift4 브랜치를 이용하세요.
+
 ## Overview
 
 <img src="https://github.com/naru-jpn/LoopedContentsView/blob/master/LoopedContentsView.gif?raw=true" width="500" />
