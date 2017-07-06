@@ -1,6 +1,7 @@
 # LoopedContentsView
 [![Swift](https://img.shields.io/badge/swift-3.0-green.svg?style=flat)](#)
 [![Swift](https://img.shields.io/badge/swift-3.2-green.svg?style=flat)](#)
+[![Swift](https://img.shields.io/badge/swift-4.0-green.svg?style=flat)](#)
 [![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg?style=flat)](#)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://opensource.org/licenses/MIT)
 
