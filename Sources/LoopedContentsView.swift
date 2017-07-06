@@ -418,10 +418,14 @@ public class LoopedContentsView: UIView, UIScrollViewDelegate {
         let itemIndexes: [Int] = previousItemIndexes + [self.centerItem.itemIndex] + nextItemIndexes
         
         // Get Visible Indexes in Whole Scroll View
-        let previousIndexes: [Int] = (0..<(previousItemIndexes.count)).enumerated().map { (index: Int, value: Int) -> Int in
+        let previousIndexes: [Int] = (0..<(previousItemIndexes.count)).enumerated().map { (arg: (offset: Int, element: Int)) -> Int in
+            
+            let (index, value) = arg
             return self.centerItem.index - index - 1
         }.reversed()
-        let nextIndexes: [Int] = (0..<(nextItemIndexes.count)).enumerated().map { (index: Int, value: Int) -> Int in
+        let nextIndexes: [Int] = (0..<(nextItemIndexes.count)).enumerated().map { (arg: (offset: Int, element: Int)) -> Int in
+            
+            let (index, value) = arg
             return self.centerItem.index + index + 1
         }
         
@@ -547,7 +551,7 @@ public class LoopedContentsView: UIView, UIScrollViewDelegate {
     
     // MARK: Gesture
     
-    func onCellTapped(sender: UITapGestureRecognizer) {
+    @objc func onCellTapped(sender: UITapGestureRecognizer) {
         
         guard let cell: LoopedContentsViewCell = sender.view as? LoopedContentsViewCell else {
             return
